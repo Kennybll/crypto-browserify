@@ -11,10 +11,6 @@ exports.getHashes = function () {
   return hashes
 }
 
-var p = require('pbkdf2')
-exports.pbkdf2 = p.pbkdf2
-exports.pbkdf2Sync = p.pbkdf2Sync
-
 var aes = require('browserify-cipher')
 
 exports.Cipher = aes.Cipher
